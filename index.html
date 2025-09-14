@@ -12,22 +12,70 @@
     <header>
         <!-- navbar started -->
         <nav class="navbar flex justify-around items-center flex-wrap">
-            <div class="nav-items flex items-center flex-wrap pt-3 pb-3 pl-3.5 pr-3.5 gap-80">
-                <div><span class="menu-icon"><i class="fa-solid fa-bars"></i></span></div>
-                <div class="heading">
-                    <h2 class="text-[20px]">BURGER KING</h2>
+            <div class="nav-items flex items-center flex-wrap p-2 pl-3.5 pr-3.5 ">
+                <!-- <div><span class="menu-icon ml-40 font-[100]"><i class="fa-solid fa-bars"></i></span></div> -->
+                 <div class="flex ml-40">
+      <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 cursor-pointer">
+        <span class="sr-only ">Open main menu</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+          <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+    <el-dialog>
+    <dialog id="mobile-menu" class="backdrop:bg-transparent ">
+      <div tabindex="0" class="fixed inset-0 focus:outline-none">
+        <el-dialog-panel class="fixed inset-y-0 left-0 z-50 w-full overflow-y-auto bg-[#F8F1E7] p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div class="flex items-center justify-between">
+            <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md  text-[#522414]">
+              <span class="sr-only">Close menu</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div>
+                <h3>Welcome back to
+</h3>
+                <img src="src/assets/images/72d5f35a35324c6afa09b33ee057a59a0a5c06e8-205x53.png" alt=""></div>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <div class="-mx-3">
+                  <button type="button"  commandfor="products" class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-[#502314] ">
+                    Support
+                    
+                  </button><hr>
+                  
                 </div>
-                <div>
-                <span class="user-icon "><i class="fa-solid fa-user"></i></span>
-                <div class="border-2 p-1 rounded-2xl pl-4 pr-4 text-[#737373] border-[#bab5ad]"><button class="cart-btn"><span class="bag-icon pr-2"><i class="fa-solid fa-bag-shopping"></i></span>View
-                        Cart</button></div>
-                        </div>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-[#502314] ">Gift Cards</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-[#502314] ">Royal Perks</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-[#502314] ">About Burger King</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-[#502314] ">Legal</a>
+              </div>
+              <div class="py-6">
+            
+              </div>
+            </div>
+          </div>
+        </el-dialog-panel>
+      </div>
+    </dialog>
+  </el-dialog>
+                <div class="heading">
+                    <h2 class="text-2xl mr-86 ml-86 text-center items-center font-insani">BURGER KING.</h2>
+                </div>
+
+<span class="user-icon mr-4 text-[0.9rem] "><i class="fa-solid fa-user"></i></span>
+<div class="border-[1.5px]  h-8  rounded-2xl pl-3 pr-3 text-[#737373] border-[#bab5ad] mr-20">
+    <button class="cart-btn text-[0.7rem] font-flame font-[100]"><span class="bag-icon pr-2"><i class="fa-solid fa-bag-shopping"></i></span>View Cart</button></div>
+
             </div>
         </nav>
         <hr class="text-[#d4d1d0]">
         <!-- navbar endes -->
     </header>
-    <main ></main>
+    <main></main>
     <footer></footer>
     <script src="https://kit.fontawesome.com/b9cdd3391c.js" crossorigin="anonymous"></script>
 </body>

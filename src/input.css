@@ -1,1 +1,20 @@
+
 @import "tailwindcss";
+@font-face {
+    font-family: insani;
+    src: url(assets/fonts/insaniburger/Insani-regular.ttf);
+}
+@font-face {
+    font-family: flame;
+    src: url(assets/fonts/Burger-King-Flame/Flame-Regular.otf);
+
+}
+@theme{
+    --font-insani:"insani";
+    --font-flame:"flame";
+    
+
+}
+/* h1{
+    color: #502314;
+} */
