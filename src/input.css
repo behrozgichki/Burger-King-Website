@@ -1,5 +1,7 @@
 
 @import "tailwindcss";
+@plugin "daisyui";
+
 @font-face {
     font-family: insani;
     src: url(assets/fonts/insaniburger/Insani-regular.ttf);
@@ -15,6 +17,3 @@
     
 
 }
-/* h1{
-    color: #502314;
-} */

@@ -2,82 +2,185 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burger King</title>
-    <link rel="stylesheet" href="src/output.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger King</title>
+  <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+    href="/css/app-wa-6c2cfb834ff69809c67c5d613feb4d68.css?vsn=d">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/fontawesome.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/whiteboard-semibold.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/thumbprint-light.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/slab-press-regular.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/slab-regular.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/sharp-duotone-thin.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/sharp-duotone-solid.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/sharp-duotone-regular.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/sharp-duotone-light.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/sharp-thin.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/sharp-solid.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/sharp-regular.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/sharp-light.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/notdog-duo-solid.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/notdog-solid.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/jelly-fill-regular.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/jelly-duo-regular.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/jelly-regular.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/etch-solid.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/duotone-thin.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/duotone.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/duotone-regular.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/duotone-light.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/thin.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/solid.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/regular.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/light.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/brands.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/chisel-regular.css">
+  <link rel="stylesheet" href="src/output.css">
 </head>
 
 <body class="bg-[#F8F1E7] text-[#522414]">
-    <header>
-        <!-- navbar started -->
-        <nav class="navbar flex justify-around items-center flex-wrap">
-            <div class="nav-items flex items-center flex-wrap p-2 pl-3.5 pr-3.5 ">
-                <!-- <div><span class="menu-icon ml-40 font-[100]"><i class="fa-solid fa-bars"></i></span></div> -->
-                 <div class="flex ml-40">
-      <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 cursor-pointer">
-        <span class="sr-only ">Open main menu</span>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
-          <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-      </button>
-    </div>
-    <el-dialog>
-    <dialog id="mobile-menu" class="backdrop:bg-transparent ">
-      <div tabindex="0" class="fixed inset-0 focus:outline-none">
-        <el-dialog-panel class="fixed inset-y-0 left-0 z-50 w-full overflow-y-auto bg-[#F8F1E7] p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-          <div class="flex items-center justify-between">
-            <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md  text-[#522414]">
-              <span class="sr-only">Close menu</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
-                <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </button>
-            <div>
-                <h3>Welcome back to
-</h3>
-                <img src="src/assets/images/72d5f35a35324c6afa09b33ee057a59a0a5c06e8-205x53.png" alt=""></div>
-          </div>
-          <div class="mt-6 flow-root">
-            <div class="-my-6 divide-y divide-gray-500/10">
-              <div class="space-y-2 py-6">
-                <div class="-mx-3">
-                  <button type="button"  commandfor="products" class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-[#502314] ">
-                    Support
-                    
-                  </button><hr>
-                  
+  <header>
+    <!-- navbar started -->
+    <nav class="fixed top-0 left-0 w-full bg-[#F8F1E7] border-b border-gray-300 z-50">
+  <div class="relative flex items-center justify-between px-4 py-2 ">
+
+        <div class="flex p-0 lg:ml-40">
+          <button type="button" command="show-modal" commandfor="mobile-menu"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 cursor-pointer">
+            <span class="sr-only ">Open main menu</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+              aria-hidden="true" class="size-6">
+              <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <el-dialog>
+          <dialog id="mobile-menu" class="backdrop:bg-transparent ">
+            <div tabindex="0" class="fixed inset-0 focus:outline-none">
+              <el-dialog-panel
+                class="fixed inset-y-0 left-0 z-50 w-full overflow-y-auto bg-[#F8F1E7] p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div class="flex items-center justify-between">
+                  <button type="button" command="close" commandfor="mobile-menu"
+                    class="-m-2.5 rounded-md  text-[#522414]">
+                    <span class="sr-only">Close menu</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                      aria-hidden="true" class="size-6">
+                      <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <div>
+                    <h3>Welcome back to
+                    </h3>
+                    <img src="src/assets/images/72d5f35a35324c6afa09b33ee057a59a0a5c06e8-205x53.png" alt="">
+                  </div>
                 </div>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-[#502314] ">Gift Cards</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-[#502314] ">Royal Perks</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-[#502314] ">About Burger King</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-[#502314] ">Legal</a>
-              </div>
-              <div class="py-6">
-            
-              </div>
+                <div class="mt-6 flow-root">
+                  <div class="-my-6 divide-y divide-gray-500/10">
+                    <div class="space-y-2 py-6">
+                      <div class="-mx-3">
+                        <button type="button" commandfor="products"
+                          class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-[#502314] ">
+                          Support
+
+                        </button>
+                        <hr>
+
+                      </div>
+                      <a href="#"
+                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-[#502314] ">Gift
+                        Cards</a>
+                      <a href="#"
+                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-[#502314] ">Royal
+                        Perks</a>
+                      <a href="#"
+                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-[#502314] ">About Burger
+                        King</a>
+                      <a href="#"
+                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-[#502314] ">Legal</a>
+                    </div>
+                    <div class="py-6">
+
+                    </div>
+                  </div>
+                </div>
+              </el-dialog-panel>
             </div>
-          </div>
-        </el-dialog-panel>
+          </dialog>
+        </el-dialog>
+        <div class="heading ">
+          <h2 class="font-bold text-lg md:text-2xl mr-86 lg:ml-86 text-center items-center font-insani leading-none whitespace-nowrap">BURGER KING.</h2>
+        </div>
+
+        <span class="user-icon  lg:mr-4 text-[0.9rem] "><i class="fa-solid fa-user"></i></span>
+        <div class="border-[1.5px] h-8 rounded-2xl px-3 text-[#737373] border-[#bab5ad] mr-20 hidden lg:inline-block">
+          <button class="cart-btn text-[0.7rem] font-flame font-[100] whitespace-nowrap"><span class="bag-icon pr-2"><i
+                class="fa-solid fa-bag-shopping "></i></span>View Cart</button>
+        </div>
+
       </div>
-    </dialog>
-  </el-dialog>
-                <div class="heading">
-                    <h2 class="text-2xl mr-86 ml-86 text-center items-center font-insani">BURGER KING.</h2>
-                </div>
+    </nav>
+    <hr class="text-[#d4d1d0]">
 
-<span class="user-icon mr-4 text-[0.9rem] "><i class="fa-solid fa-user"></i></span>
-<div class="border-[1.5px]  h-8  rounded-2xl pl-3 pr-3 text-[#737373] border-[#bab5ad] mr-20">
-    <button class="cart-btn text-[0.7rem] font-flame font-[100]"><span class="bag-icon pr-2"><i class="fa-solid fa-bag-shopping"></i></span>View Cart</button></div>
+  </header>
+  <!-- navbar ended -->
 
-            </div>
-        </nav>
-        <hr class="text-[#d4d1d0]">
-        <!-- navbar endes -->
-    </header>
-    <main></main>
-    <footer></footer>
-    <script src="https://kit.fontawesome.com/b9cdd3391c.js" crossorigin="anonymous"></script>
+  <!-- first content -->
+  <main>
+    <div class=" flex justify-evenly pl-20 pr-20 pb-96">
+      <div class="pt-24"><h1 class="font-insani  md:text-5xl flex justify-center items-center block lg:text-5xl flex justify-center items-center p-5 font-bold">Start your <br>
+        BK® order.</h1>
+      <div class="flex flex-col justify-center items-center gap-2">
+        <button class="bg-[#d62300] text-white p-2.5 w-64 rounded-4xl font-flame text-[0.80rem]"><span
+            class="bag-icon pr-1"><i class="fa-solid fa-bag-shopping "></i></span>
+          Order Pickup
+        </button>
+        <button class="border border-[#502314] text-[#502314] p-2.5 w-64 rounded-4xl font-flame text-[0.80rem]"><span class="text-[0.60rem]"><i
+            class="fa-light fa-moped"></i></span>
+          Order Delivery
+        </button>
+      </div>
+      </div>
+      <div class="p-5 pt-16"><img src="src/assets/images/burger-image.avif" alt="" class="object-cover w-150 h-75 "></div>
+    </div>
+    <!-- content one ended -->
+
+    <!-- content two started -->
+     <div class="bg-[#EEE8DE] p-24"></div>
+    <!-- content two ended -->
+    
+  </main>
+  <footer></footer>
+  <script src="https://kit.fontawesome.com/b9cdd3391c.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
