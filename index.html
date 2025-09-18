@@ -68,11 +68,11 @@
   <link rel="stylesheet" href="src/output.css">
 </head>
 
-<body class="bg-[#F8F1E7] text-[#522414]">
+<body class="bg-[#F8F1E7] text-[#522414] min-h-screen">
   <header>
     <!-- navbar started -->
     <nav class="fixed top-0 left-0 w-full bg-[#F8F1E7] border-b border-gray-300 z-50">
-  <div class="relative flex items-center justify-between px-4 py-2 ">
+      <div class="relative flex items-center justify-between px-4 py-2 ">
 
         <div class="flex p-0 lg:ml-40">
           <button type="button" command="show-modal" commandfor="mobile-menu"
@@ -101,7 +101,7 @@
                   <div>
                     <h3>Welcome back to
                     </h3>
-                    <img src="src/assets/images/72d5f35a35324c6afa09b33ee057a59a0a5c06e8-205x53.png" alt="">
+                    <img src="src/assets/images/royal perks.png" alt="">
                   </div>
                 </div>
                 <div class="mt-6 flow-root">
@@ -138,7 +138,9 @@
           </dialog>
         </el-dialog>
         <div class="heading ">
-          <h2 class="font-bold text-lg md:text-2xl mr-86 lg:ml-86 text-center items-center font-insani leading-none whitespace-nowrap">BURGER KING.</h2>
+          <h2
+            class="font-bold text-lg md:text-2xl mr-86 lg:ml-86 text-center items-center font-insani leading-none whitespace-nowrap">
+            BURGER KING.</h2>
         </div>
 
         <span class="user-icon  lg:mr-4 text-[0.9rem] "><i class="fa-solid fa-user"></i></span>
@@ -156,28 +158,115 @@
 
   <!-- first content -->
   <main>
-    <div class=" flex justify-evenly pl-20 pr-20 pb-96">
-      <div class="pt-24"><h1 class="font-insani  md:text-5xl flex justify-center items-center block lg:text-5xl flex justify-center items-center p-5 font-bold">Start your <br>
-        BK® order.</h1>
-      <div class="flex flex-col justify-center items-center gap-2">
-        <button class="bg-[#d62300] text-white p-2.5 w-64 rounded-4xl font-flame text-[0.80rem]"><span
-            class="bag-icon pr-1"><i class="fa-solid fa-bag-shopping "></i></span>
-          Order Pickup
-        </button>
-        <button class="border border-[#502314] text-[#502314] p-2.5 w-64 rounded-4xl font-flame text-[0.80rem]"><span class="text-[0.60rem]"><i
-            class="fa-light fa-moped"></i></span>
-          Order Delivery
-        </button>
+    <div class=" grid md:grid-cols-2  md:pl-20 md:pr-20 pb-[200px]">
+      <div class="pt-6 order-1 md:order-2 pt-24">
+        <h1 class="hidden md:flex font-flame-bold md:text-5xl lg:text-5xl justify-center items-center p-5 font-bold">
+          Start your <br>
+          BK® order.</h1>
+        <div class="flex flex-col justify-center items-center gap-2 relative top-80 md:static md:top-0">
+          <button class="bg-[#d62300] text-white p-2.5 w-full rounded-4xl font-flame text-[0.80rem] md:w-64"><span
+              class="bag-icon pr-1"><i class="fa-solid fa-bag-shopping "></i></span>
+            Order Pickup
+          </button>
+          <button
+            class="border border-[#502314] text-[#502314] p-2.5 w-full md:w-64 rounded-4xl font-flame text-[0.80rem]"><span
+              class="text-[0.60rem]"><i class="fa-light fa-moped"></i></span>
+            Order Delivery
+          </button>
+        </div>
       </div>
+      <div class=" relative bottom-32 items-center md:static md:pt-16 order-1 md:order-2 cursor-pointer">
+        <img src="src/assets/images/burger-image.avif" alt="Burger"
+          class="object-cover w-full h-auto md:max-w-full md:w-full h-full">
       </div>
-      <div class="p-5 pt-16"><img src="src/assets/images/burger-image.avif" alt="" class="object-cover w-150 h-75 "></div>
     </div>
+
+
+
+
     <!-- content one ended -->
 
     <!-- content two started -->
-     <div class="bg-[#EEE8DE] p-24"></div>
-    <!-- content two ended -->
+    <div class="bg-[#EEE8DE] grid grid-cols-1 md:grid-cols-2 gap-8 md:px-24 px-4 pt-10 pb-28">
+  
+  <div class="flex justify-center items-center relative bottom-16">
+    <img src="src/assets/images/iphone-image.avif" alt="iPhone" class="w-96 hidden lg:block">
+    <img src="src/assets/images/iphone-2-image.avif" alt="iPhone Mobile" class="w-full h-auto block lg:hidden">
+  </div>
+
+  <div class="flex flex-col justify-center items-start">
+    <h1 class="font-flame-bold text-3xl md:text-4xl font-bold whitespace-nowrap pt-10">
+      Save $$$ <br>
+      With offers on demand.
+    </h1>
+
+    <div class="pt-5 flex gap-4">
+      <a href="/" tabIndex="0">
+        <img class="w-[170px] h-[55px]" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" />
+      </a>
+      <a href="/" tabIndex="0">
+        <img class="w-[170px] h-[50px]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="Google Play" />
+      </a>
+    </div>
+
+    <div class="pt-6 text-[0.65rem] font-[200] font-flame-sans pr-4">
+      <p>
+        Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries.
+        App Store is a service mark of Apple Inc. Google Play is a trademark of Google Inc. Terms apply.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="fixed bottom-0 left-0 w-full bg-[#502314] text-white p-3 text-center text-[0.60rem] z-50">
+  <p class="px-2">
+    TM & Copyright 2025 Burger King Company LLC. All Rights Reserved. |
+    <a href="#" class="underline hover:text-gray-300">
+      Do Not Sell Or Share My Personal Information
+    </a>
+  </p>
+</div>
+
+        <!-- content two ended -->
+
+        <!-- sticky last bar started -->
+        <footer>
+          <div class="fixed bottom-0 left-0 w-full bg-[#F8F1E7] border-b border-gray-300 z-50 pt-2">
+  <div class="flex justify-evenly gap-10 text-[0.60rem] font-flame-sans
+  ">
     
+    <div class="cursor-pointer">
+      <img src="src/assets/images/home.png" alt="">
+      <p>Home</p>
+    </div>
+
+    <div class="cursor-pointer">
+      <img src="src/assets/images/menu.png" alt="">
+      <p>Menu</p>
+    </div>
+
+    <div class="cursor-pointer">
+      <img src="src/assets/images/offers.png" alt="">
+      <p>Offers</p>
+    </div>
+
+    <div class="cursor-pointer">
+      <img src="src/assets/images/rewards.png" alt="">
+      <p>Rewards</p>
+    </div>
+
+    <div class="cursor-pointer lg:hidden">
+      <img src="src/assets/images/my-code.png" alt="">
+      <p>My code</p>
+    </div>
+
+  </div>
+</div>
+
+        </footer>
+        <!-- sticky last bar ended -->
+
   </main>
   <footer></footer>
   <script src="https://kit.fontawesome.com/b9cdd3391c.js" crossorigin="anonymous"></script>

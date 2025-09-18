@@ -11,9 +11,18 @@
     src: url(assets/fonts/Burger-King-Flame/Flame-Regular.otf);
 
 }
+@font-face {
+    font-family: flame-sans;
+    src: url(assets/fonts/flame/fonts/fonnts.com-FlameSans.otf);
+}
+@font-face {
+    font-family: flame-bold;
+    src: url(assets/fonts/flame/fonts/fonnts.com-FlameBold.otf);
+}
 @theme{
     --font-insani:"insani";
     --font-flame:"flame";
-    
+    --font-flame-sans:"flame-sans";
+    --font-flame-bold:"flame-bold";
 
 }
