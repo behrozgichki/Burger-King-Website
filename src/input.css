@@ -19,10 +19,15 @@
     font-family: flame-bold;
     src: url(assets/fonts/flame/fonts/fonnts.com-FlameBold.otf);
 }
+@font-face {
+    font-family: flame-regular;
+    src: url(assets/fonts/flame/fonts/fonnts.com-FlameRegular.otf);
+}
 @theme{
     --font-insani:"insani";
     --font-flame:"flame";
     --font-flame-sans:"flame-sans";
     --font-flame-bold:"flame-bold";
+    --font-flam-regular:"flame-regular";
 
 }
